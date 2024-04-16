@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener Microservice</title>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <main>
+      <section>
+
+        <form id="urlForm" action="api/shorturl" method="POST">
+          <fieldset>
+            <p>Use this example: https://www.youtube.com/</p>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.example.com/" />
+            <input type="submit" value="POST_URL" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
