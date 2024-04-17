@@ -82,7 +82,7 @@ app.post('/api/shorturl', (req,res) => {
   dns.lookup(param, (err, url_Ip) => {
     if (err) {
       console.log(url_Ip);
-      return res.json({ error: 'Neisplravan url' });
+      return res.json({ error: 'Neispravan url' });
     }
     else {
       short = gen_shorturl();
